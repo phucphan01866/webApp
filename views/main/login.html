@@ -1,0 +1,88 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources\css\main\header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources\css\main\register.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topBarMenu">
+        <div class="menuLeft">
+          <a href="" class="menu-item logo">
+            <img
+            	src="resources\images\e-comerce-high-resolution-logo-transparent.png"
+          	/>
+          </a>
+
+          <a href="category.htm" class="menu-item category">
+            <span class="category-text">Danh mục sản phẩm</span>
+            <img
+              src="resources\images\Arrow_drop_down_big.png"
+              alt=""
+              class="dropdown-icon"
+            />
+          </a>
+          <div class="menu-item">Tin tức</div>
+          <div class="menu-item">Liên hệ</div>
+          <div class="menu-item">Kiểm tra đơn hàng</div>
+        </div>
+        <div class="menuRight">
+          <div class="icon search-bar">
+            <img src="resources\images\search.png" alt="" class="" />
+            <p>Tra cứu</p>
+          </div>
+          <a href="cart.htm" class="icon icon-cart">
+            <img src="resources\images\shopping-cart.svg" alt="" class="cart" />
+          </a>
+          <div class="icon icon-user">
+            <img src="resources\images\user.svg" alt="" class="user" />
+            <div class="login-logout-panel">
+            	<a href="login.htm">Đăng nhập</a>
+            	<hr>
+            	<a href="register.htm">Đăng ký</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content login">
+        <form class="form">
+          <div class="title">Đăng nhập</div>
+          <input type="text" class="input-field email" placeholder="Email" />
+          <input
+            type="password"
+            class="input-field password"
+            placeholder="Mật khẩu"
+          />
+          <a class="link-forgot-password" href="#">Quên mật khẩu?</a>
+          <button class="submit-button">Đăng nhập</button>
+          <div class="register">
+            <span class="register-text">Chưa có tài khoản? </span>
+            <a class="link-regis" href="register.htm">Đăng ký</a>
+          </div>
+        </form>
+        <img
+          class="promo-img"
+          src="resources/images/login-img.png"
+          alt="Promo Image"
+        />
+      </div>
+    </div>
+  </body>
+</html>
